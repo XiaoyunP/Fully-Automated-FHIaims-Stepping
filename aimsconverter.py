@@ -5,12 +5,12 @@ g = open("control.in", "w")
 
 #n = len(sys.argv)
 
-nmolecule = 18
+nmolecule = 17
 nelectrodeL = 18
 nLrelax = 4
 nelectrodeR = 18
 nRrelax = 4
-InorOut = "Out"
+InorOut = "In"
 
 #nmolecule = int(sys.argv[1])
 #nelectrodeL = int(sys.argv[2])

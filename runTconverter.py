@@ -24,7 +24,7 @@ with open ("runT.sh", "rt") as myfile:
     for myline in myfile:
         linenum += 1
         mylines.append(myline.rstrip('\n'))
-        substra = "ACTIVE=/projectnb/kamenet/Brent/FHIaims/au18_c4da_au18/"
+        substra = "ACTIVE=/projectnb/kamenet/xiaoyun/FHIaims/histamine_recal/v2/Au18/push/"
         #print(myline)
         #linenum = len(myfile)-1
         if myline.find(substra) != -1:
@@ -36,7 +36,7 @@ with open ("runT.sh", "rt") as myfile:
     for myline in mylines:
         linenum += 1
         if linenum == endindex:
-            mydata.append("ACTIVE=/projectnb/kamenet/Brent/FHIaims/au18_c4da_au18/step%s" % stepnum) 
+            mydata.append("ACTIVE=/projectnb/kamenet/xiaoyun/FHIaims/histamine_recal/v2/Au18/push/step%s" % stepnum) 
         else:
             mydata.append(myline)
       

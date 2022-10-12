@@ -6,7 +6,7 @@
 
 #$ -l h_rt=12:00:00
 
-ACTIVE=/projectnb/kamenet/Brent/FHIaims/au18_c4da_au18/
+ACTIVE=/projectnb/kamenet/xiaoyun/FHIaims/histamine_recal/v2/Au18/push
 
 export OMP_NUM_THREADS=1
 export MKL_NUM_THREADS=1
@@ -63,7 +63,7 @@ cp geometryrelaxed$n.xyz step$n
 
 cd step$n
 
-/projectnb/kamenet/Programs/FHIaims/Previous_Attempts/fhi-aims.171221/bin/tcontrol.aims.x -lsurc 29 -lsurx 33 -lsury 34 -rsurc 48 -rsurx 49 -rsury 53 -nlayers 2 -ener -0.4 -estep 0.001 -eend 0.1
+/projectnb/kamenet/Programs/FHIaims/Previous_Attempts/fhi-aims.171221/bin/tcontrol.aims.x -lsurc 29 -lsurx 30 -lsury 34 -rsurc 47 -rsurx 48 -rsury 52 -nlayers 2 -ener -0.4 -estep 0.0001 -eend 0.1
 
 cd ..
 

@@ -33,7 +33,7 @@ for i in range(1,int(nsteps)):
   mylistyb.clear()  
   mylistyc.clear()
   stri = str(i)
-  pathb = '/projectnb/kamenet/Brent/FHIaims/au18_c4da_au18/step%s' % stri
+  pathb = '/projectnb/kamenet/xiaoyun/FHIaims/histamine_recal/v2/Au18/push/step%s' % stri
   #print(pathb)
   os.chdir(pathb)
   pathc = os.getcwd()
