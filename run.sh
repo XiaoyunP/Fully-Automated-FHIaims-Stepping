@@ -63,7 +63,7 @@ cp geometryrelaxed$n.xyz step$n
 
 cd step$n
 
-/projectnb/kamenet/Programs/FHIaims/Previous_Attempts/fhi-aims.171221/bin/tcontrol.aims.x -lsurc 29 -lsurx 33 -lsury 34 -rsurc 48 -rsurx 49 -rsury 53 -nlayers 2 -ener -0.4 -estep 0.001 -eend 0.1
+/projectnb/kamenet/Programs/FHIaims/Previous_Attempts/fhi-aims.171221/bin/tcontrol.aims.x -lsurc 29 -lsurx 33 -lsury 34 -rsurc 48 -rsurx 49 -rsury 53 -nlayers 2 -ener -0.4 -estep 0.0001 -eend 0.1
 
 cd ..
 
