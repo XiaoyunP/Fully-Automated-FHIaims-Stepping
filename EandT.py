@@ -39,7 +39,7 @@ for i in range(1,int(nsteps)):
   pathc = os.getcwd()
   #print(pathc)
   
-  # If TE.dat not exists, print 0 in f and g to notify
+  # If TE.dat not exists, print NA in f and g to notify   xp 10.16.22
   if not os.path.exists("TE.dat"):
     g.writelines("NA\n")
     f.writelines("NA\n")
