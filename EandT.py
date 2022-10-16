@@ -33,11 +33,18 @@ for i in range(1,int(nsteps)):
   mylistyb.clear()  
   mylistyc.clear()
   stri = str(i)
-  pathb = '/projectnb/kamenet/Brent/FHIaims/au18_c4da_au18/step%s' % stri
+  pathb = '/projectnb/kamenet/xiaoyun/FHIaims/histamine_recal/v1/netural/Au18/pull_2/step%s' % stri
   #print(pathb)
   os.chdir(pathb)
   pathc = os.getcwd()
   #print(pathc)
+  
+  # If TE.dat not exists, print 0 in f and g to notify
+  if not os.path.exists("TE.dat"):
+    g.writelines("NA\n")
+    f.writelines("NA\n")
+    continue
+  
   with open ("TE.dat", "rt") as myfile:
   
     for myline in myfile:
